@@ -1,0 +1,47 @@
+*{margin:0;padding: 0;}
+
+
+.thumbnail img {
+    height: 200px;
+}
+
+a.btn.btn-default.sign-up {
+    float: right;
+    margin-top: 8px;
+}
+/* ============  Responsive CSS Landscape Tablet
+ ============== */
+
+@media only screen and (max-width: 1240px) {
+
+}
+
+
+
+/* ============
+  Responsive CSS Portrait Tablet
+  ============== */
+
+@media only screen and (max-width: 959px) {
+
+}
+
+
+
+/* ============
+  Responsive CSS Landscape Mobile
+ ============== */
+
+@media only screen and (max-width: 767px) {
+
+}
+
+
+
+/* ============
+  Responsive CSS Portrait Mobile
+  ============== */
+
+@media only screen and (max-width: 479px) {
+
+}
