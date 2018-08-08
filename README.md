@@ -1,2 +1,5 @@
-# LoginProductList
-login page and render product list
+Install
+npm install
+
+Usage
+npm start
