@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import callAPI from './../utils/apiCaller';
-import axios from 'axios';
-
 
 class Transfer extends Component {
 	constructor(props){
@@ -12,8 +10,8 @@ class Transfer extends Component {
 	}
 	componentDidMount(){
 		var token = localStorage.getItem('token')
-		console.log(token);
-		var headers = {	'Content-Type': 'application/x-www-form-urlencoded',
+		var headers = {	
+						'Content-Type': 'application/x-www-form-urlencoded',
 						'Authorization' : token
 					}
 
@@ -61,7 +59,7 @@ class Transfer extends Component {
 	            			<td>{data.create_date}</td>
 	            			<td>{data.warehouse}</td>
 	            			<td>{data.warehouse_dest}</td>
-	            			<td>{data.transfer_type = 'move_sale' ? 'Chuyển bán' : 'Chuyển liên khu vực'}</td>
+	            			<td>{data.transfer_type === 'move_sale' ? 'Chuyển bán' : 'Chuyển liên khu vực'}</td>
 	            			<td>{data.product_qty}</td>
 	            			<td>{this.showStatus(data.state)}</td>
 	            		</tr>
@@ -74,7 +72,6 @@ class Transfer extends Component {
   render() {
   	var { transfer } = this.state;
 
-  	console.log(transfer)
     return (
     	<div>
             <h1>Đây là trang luân chuyển</h1>

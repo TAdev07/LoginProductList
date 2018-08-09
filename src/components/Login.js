@@ -55,7 +55,7 @@ class Login extends Component {
   	const { redirectToReferrer } = this.state;
 
     if (redirectToReferrer === true) {
-      return <Redirect to='/transfer' />;
+      return <Redirect to='/reverse' />;
     }
 
     return (

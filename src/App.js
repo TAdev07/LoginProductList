@@ -49,7 +49,8 @@ class App extends Component {
                         key={index}
                         path={route.path} 
                         exact={route.exact}
-                        component={route.main} 
+                        component={route.main}
+                        item={this.showValue}
                     />
                 );
         });
